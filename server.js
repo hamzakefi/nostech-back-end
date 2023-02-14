@@ -25,7 +25,7 @@ app.use ('/api/order' , require ('./routes/order'))
 
 const PORT = process.env.PORT || 7500
 
-app.get('/', (req, res) => {
+app.use('/', (req, res) => {
     res.send('Hello from Node.js!')
 })
 
